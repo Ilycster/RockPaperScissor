@@ -3,9 +3,12 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
+public class window extends JFrame{
+    
+gamePanel window;
 
-public class gamePanel  extends JPanel{
-    
-    
+Window(){
+
+}
 
 }
