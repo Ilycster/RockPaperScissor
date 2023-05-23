@@ -22,9 +22,13 @@ public class LaunchPage implements ActionListener{
         frame.setVisible(true);
  
     }
-
+ 
     @Override
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
+        if(e.getSource() == myButton){
+
+            NewWindow myWindow = new NewWindow();
+        }
     }
 }
