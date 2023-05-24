@@ -3,5 +3,7 @@ public class rpsMain {
 
    LaunchPage launchpage = new LaunchPage();
 
+
+   int Ilia = 1;
   }
 }
