@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 public class LaunchPage implements ActionListener{
    
     JFrame frame = new JFrame();
-    JButton myButton = new JButton("New Window");
+    JButton myButton = new JButton("Play");
 
     LaunchPage(){
 
@@ -25,7 +25,7 @@ public class LaunchPage implements ActionListener{
  
     @Override
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
+        
         if(e.getSource() == myButton){
 
             NewWindow myWindow = new NewWindow();
