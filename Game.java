@@ -3,13 +3,21 @@ import java.awt.event.ActionListener;
 
 public class Game extends Engine implements ActionListener{
     Window window;
-
-    public void Game(Window window) {
+    public Game(Window window) {
         this.window = window;
     }
 
     @Override
+    public void create(){
+    }
+
+    @Override
     public void update(){
+
+    }
+
+    @Override
+    public void render(){
 
     }
 
@@ -19,14 +27,8 @@ public class Game extends Engine implements ActionListener{
     }
 
     @Override
-    public void render(){
-
-
-    }
-
-    @Override
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
-       
     }
+
 }
