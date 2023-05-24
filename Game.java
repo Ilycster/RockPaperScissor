@@ -1,14 +1,21 @@
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import javax.swing.JButton;
 
-public class Game extends Engine implements ActionListener{
+public class Game extends Logic{
+    Engine engine;
     Window window;
+
+    JButton myButton = new JButton("New Window");
+
     public Game(Window window) {
+
+        engine = new Engine(this);
+
         this.window = window;
     }
 
     @Override
     public void create(){
+        // window.addButton(myButton);
     }
 
     @Override
@@ -24,11 +31,6 @@ public class Game extends Engine implements ActionListener{
     @Override
     public void input(){
 
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
     }
 
 }

@@ -1,12 +1,11 @@
+import javax.swing.JButton;
 
 public class Main {
-  public static void main(String[] args)  {
+    public static void main(String[] args)  {
 
-//  LaunchPage launchpage = new LaunchPage();
+      Window window = new Window("Untitled Game", 1920, 1080, false, new JButton("New Window"));
 
-    Window window = new Window("Untitled Game", 1920, 1080, false);
-
-    Game game = new Game(window);
- 
-}
+      Game game = new Game(window);
+   
+  }
 }
