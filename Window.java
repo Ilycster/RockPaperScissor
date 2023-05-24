@@ -3,15 +3,14 @@ import javax.swing.JFrame;
 public class Window {
     JFrame frame = new JFrame();
 
-    public Window(String string, int i, int j, boolean b) {
-    }
-
-    public void Window(String title, int width, int height, boolean fullscreen){
+    public Window(String title, int width, int height, boolean fullscreen){
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(420,420);
+        frame.setSize(width, height);
         frame.setLayout(null);
         frame.setVisible(true);
-        
+
+        frame.setTitle(title);
+
     }
 }
