@@ -5,33 +5,29 @@ import java.awt.event.ActionListener;
 
 public class Window implements ActionListener{
     JFrame frame = new JFrame();
-    JButton button;
+    Button button;
+    // JButton button;
 
-    public Window(String title, int width, int height, boolean fullscreen, JButton button){
-        if(button != null){
-
-            button.setBounds(100,160,200,40);
-            button.setFocusable(false);
-            button.addActionListener(this);
-            this.button = button;
-            
-            frame.add(button);
-        }
+    public Window(String title, int x, int y, int width, int height, boolean fullscreen){
+        button = new Button(this, "BUTTON CLASS!", 100, 160, 200, 40);
             
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420,420);
+        frame.setLocation(x, y);
         frame.setLayout(null);
         frame.setVisible(true);
 
 
 
     }
+    public JFrame getFrame(){
+        return frame;
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
-        if(e.getSource() == button){
-
-            // Window window = new Window("Test", 10, 10, false, null);
+        if(e.getSource() == button.getButton()){
             NewWindow myWindow = new NewWindow();
         }
     }
