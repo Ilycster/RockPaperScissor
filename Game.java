@@ -15,7 +15,7 @@ public class Game extends Logic{
 
     @Override
     public void create(){
-        window.addButton(window, "test", 10, 10, 10, 10);
+        
     }
 
     @Override

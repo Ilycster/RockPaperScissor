@@ -1,6 +1,6 @@
 public class Main {
   
-  static final int HEIGHT = 400;
+  static final int HEIGHT = 439;
   static final int WIDTH = 400;
 
     public static void main(String[] args)  {
