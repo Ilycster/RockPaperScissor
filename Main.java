@@ -1,9 +1,14 @@
 public class Main {
-  public static void main(String[] args)  {
-      
-    Window window = new Window("Untitled Game", 300, 300, 1920, 1080, false);
+  
+  static final int HEIGHT = 400;
+  static final int WIDTH = 400;
 
-    Game game = new Game(window);
-    
-  }
+    public static void main(String[] args)  {
+        
+
+      Window window = new Window("Untitled Game", 300, 300, WIDTH, HEIGHT, false);
+
+      Game game = new Game(window);
+      
+    }
 }
