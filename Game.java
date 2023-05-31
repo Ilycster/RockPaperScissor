@@ -1,3 +1,5 @@
+import java.util.Random;
+
 import javax.swing.JButton;
 
 public class Game extends Logic{
@@ -19,9 +21,24 @@ public class Game extends Logic{
     }
 
     @Override
-    public void update(){
-
-    }
+    public void update()
+    {
+        Random ran = new Random();
+        int myRanInt = ran.nextInt(3);
+        String computerRanChoice ="";
+        switch(myRanInt) 
+            {
+                case 0: computerRanChoice = "rock";
+                    break;
+                case 1: computerRanChoice = "paper";
+                    break;
+                case 2: computerRanChoice = "scissors";
+                    break;
+            }
+           
+    }  
+    
+    
 
     @Override
     public void render(){
