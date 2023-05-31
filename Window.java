@@ -53,18 +53,34 @@ public class Window implements ActionListener{
         //     NewWindow myWindow = new NewWindow();
         // }
 
+
+        int rock = 0;
+        int paper = 1;
+        int scissors = 2;
+
         if(e.getSource() == Rock.getButton()){
-            System.out.println("rock");
+            calc(0);
         }
         if(e.getSource() == Paper.getButton()){
-            System.out.println("Paper");
-
+            calc(1);
         }
         if(e.getSource() == Scissors.getButton()){
-            System.out.println("Scissors");
-
+            calc(2);
         }
 
+    }
+    public void calc(int who){
+
+        int computer = (int) (Math.random() * 3);
+        if(computer == who){
+            System.out.println("Human: " + who + " " + "Computer: " + computer + " Winner: " + "DRAW!!\n");
+        }
+        if(computer < who){
+            System.out.println("Human: " + who + " " + "Computer: " + computer + " Winner: " + "COMPUTER!!\n");
+        }
+        if(computer > who){
+            System.out.println("Human: " + who + " " + "Computer: " + computer + " Winner: " + "HUMAN!!\n");
+        }
     }
     
 }
